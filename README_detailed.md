@@ -84,6 +84,19 @@ python src/app.py
   - Precision (Failure): 0.52
   - Recall (Failure): 0.90
 
+# API Documentation
+   
+Base URL: https://predictive-maintenance-vgzh.onrender.com
+   
+## Endpoints
+   
+### Health Check
+GET /health
+   
+### Prediction
+POST /predict
+Content-Type: application/json
+
 ## API Endpoints
 
 ### Prediction Endpoint
