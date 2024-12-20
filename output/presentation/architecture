@@ -1,0 +1,12 @@
+// System Architecture
+digraph {
+	rankdir=LR
+	A [label="Sensor Data"]
+	B [label="Flask API"]
+	C [label="ML Model"]
+	D [label="Web Interface"]
+	A -> B
+	B -> C
+	C -> B
+	B -> D
+}
