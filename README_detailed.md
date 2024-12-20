@@ -141,3 +141,33 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details. 
+
+## Live Demo
+The application is deployed and available at: [https://predictive-maintenance-vgzh.onrender.com/](https://predictive-maintenance-vgzh.onrender.com/)
+
+### Example Usage with curl
+```bash
+# Health check
+curl https://predictive-maintenance-vgzh.onrender.com/health
+
+# Make a prediction
+curl -X POST \
+  https://predictive-maintenance-vgzh.onrender.com/predict \
+  -H "Content-Type: application/json" \
+  -d '{
+    "Air temperature [K]": 298.1,
+    "Process temperature [K]": 308.6,
+    "Rotational speed [rpm]": 1500,
+    "Torque [Nm]": 40,
+    "Tool wear [min]": 0
+  }'
+```
+
+### Valid Parameter Ranges
+| Parameter | Min | Max | Unit |
+|-----------|-----|-----|------|
+| Air temperature | 295 | 304 | K |
+| Process temperature | 305 | 313 | K |
+| Rotational speed | 1300 | 2000 | rpm |
+| Torque | 30 | 60 | Nm |
+| Tool wear | 0 | 250 | min |
