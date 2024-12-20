@@ -1,0 +1,11 @@
+Feature
+Rotational speed [rpm]
+Torque [Nm]
+Tool wear [min]_rolling_3
+Tool wear [min]_rolling_5
+Tool wear [min]_rolling_10
+Temperature_diff
+Temperature_ratio
+Power
+Power_per_temp
+Efficiency
